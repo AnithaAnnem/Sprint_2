@@ -10,15 +10,17 @@
   
 # Table of Contents
 
-1. [What is Continuous Integration?](#what-continuous-integration)
-2. [Why Continuous Integration?](#why-continuous-integration)
-3. [Key Components of Continuous Integration (CI)](#key-components-of-continuous-integration-ci)
-4. [Workflow of Continuous Integration](#workflow-of-continuous-integration)
-5. [Benefits of Continuous Integration](#benefits-of-continuous-integration)
-6. [Best Practices for Continuous Integration](#best-practices-for-continuous-integration)
-7. [Conclusion](#conclusion)
-8. [Contact Information](#contact-information)
-9. [References](#references)
+1. [Introduction](#introduction)
+2. [What is Continuous Integration?](#what-continuous-integration)
+3. [Why Continuous Integration?](#why-continuous-integration)
+4. [Key Components of Continuous Integration](#key-components-of-continuous-integration)
+5. [Workflow of Continuous Integration](#workflow-of-continuous-integration)
+6. [Benefits of Continuous Integration](#benefits-of-continuous-integration)
+7. [Best Practices for Continuous Integration](#best-practices-for-continuous-integration)
+8. [Conclusion](#conclusion)
+9. [Contact Information](#contact-information)
+10. [References](#references)
+
 
 # Introduction
 
@@ -38,7 +40,7 @@ Continuous Integration (CI) is a software engineering practice where code change
 
 - **Automated Testing and Deployment**: CI automates the testing and deployment process, ensuring consistent results and improving reliability.
 
-# Key Components of Continuous Integration (CI)
+# Key Components of Continuous Integration 
 
 ## 1. **Version Control System (VCS)**
 
