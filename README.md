@@ -101,5 +101,5 @@ AWS Service Control Policies are powerful tools for proactive cloud cost managem
 
 # References
 
-| [SCP](https://www.stormit.cloud/blog/aws-scp-service-control-policy/)| Documentation followed from this link|
+|[SCP](https://www.stormit.cloud/blog/aws-scp-service-control-policy/)| Documentation followed from this link|
 
