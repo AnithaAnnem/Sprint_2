@@ -9,7 +9,11 @@
 | Anitha Annem  |      |      |         | L1             | Mukul Joshi       |
 | Anitha Annem  |      |      |         | L2             | piyush Upadhyay      |
   
+## Table of Contents
 
+- [Infra Setup of SonarQube](#infra-setup-of-sonarqube)
+- [Contact Information](#contact-information)
+- [References](#references)
 
 # Infra Setup of SonarQube
 
