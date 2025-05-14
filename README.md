@@ -90,6 +90,17 @@ SonarQube can reach the internet (for plugin updates, etc.) via NAT Gateway.
 
 If a web UI is needed, use SSH tunneling or place a load balancer in front (internal or public with restricted access).
 
+# Contact Information 
+| Name       | Email Address                |
+|------------|------------------------------|
+| Anitha     |anitha.annem.snaatak@mygurukulam.co|
+
+
+# References
+| **Link** | **Description** |
+|------------------------------------------------------|------------------|
+|[SonarQube](https://www.geeksforgeeks.org/sonarqube/)|Refer this link for more about the sonarqube|
+
 
 
 
