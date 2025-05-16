@@ -21,7 +21,6 @@
 3. [Step-by-Step Setup Guide](#step-by-step-setup-guide)
    - [1. Create DevOps Repositories](#1-create-devops-repositories)
    - [2. View Created Repositories](#2-view-created-repositories)
-   - [3. Clone and Initialize a Repository](#3-clone-and-initialize-a-repository)
 4. [Conclusion](#conclusion)
 5. [Contact Information](#contact-information)
 6. [References](#references)
@@ -38,7 +37,6 @@ Before starting, ensure:
 
 - Git is installed (`git --version`)
 - Access to GitHub or an equivalent VCS platform
-- SSH keys are configured for secure access
 - You have the necessary permissions to create repositories
 
 # Step-by-Step Setup Guide
@@ -66,16 +64,7 @@ Once all repositories are created, verify them in the GitHub organization dashbo
 
 ![image](https://github.com/user-attachments/assets/198a789a-0490-4dc9-ab2d-20ac4766e81c)
 
-##  3. Clone and Initialize a Repository
 
-```bash
-git clone git@github.com:Team-Downtime-Crew/ci-cd-pipeline.git
-cd ci-cd-pipeline
-echo "# CI/CD Pipeline Repo" > README.md
-git add README.md
-git commit -m "Initial commit"
-git push origin main
-```
 
 # Conclusion
 This document outlined the structured setup of DevOps repositories within a GitHub organization, ensuring a modular and scalable approach to CI/CD, infrastructure automation, configuration management, and monitoring. By organizing your DevOps assets into dedicated repositories—such as ci-cd-pipeline, terraform-repo, monitoring-repo, and ansible—you enable better collaboration, maintainability, and security.
