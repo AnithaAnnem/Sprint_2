@@ -62,7 +62,7 @@ Once all repositories are created, verify them in the GitHub organization dashbo
 
   **Screenshot: Repositories in Organization**  
 
-![image](https://github.com/user-attachments/assets/198a789a-0490-4dc9-ab2d-20ac4766e81c)
+![image](https://github.com/user-attachments/assets/3048d2ac-3698-44c9-8e67-3cf879345804)
 
 
 
