@@ -93,6 +93,21 @@ They review the scan results and take corrective actions:
 - **Comprehensive:** Scans both direct and transitive dependencies.
 - **Regulatory Compliance:** Helps meet security standards and audits.
 - **Improves Code Quality:** Encourages use of secure and updated dependencies.
+
+
+# Dependency Scanning POC
+
+# Objective
+To evaluate the effectiveness of dependency scanning tools in identifying security vulnerabilities in third-party libraries and dependencies used in a software project.
+
+# Prerequisites
+- Java project with pom.xml
+
+- GitHub repository
+
+
+
+
   
 # Best Practices
 
