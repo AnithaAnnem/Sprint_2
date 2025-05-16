@@ -54,7 +54,7 @@ Create the following repositories in your GitHub organization:
 
 **Screenshot: Creating `ci-cd-pipeline` Repository**  
 
-![image](https://github.com/user-attachments/assets/623af62b-8324-4ede-9458-8ab0a253e3a6)
+![image](https://github.com/user-attachments/assets/4295cb29-e4db-4d9c-9902-5727d7c95a2a)
 
 ##    2. View Created Repositories
 
@@ -62,7 +62,7 @@ Once all repositories are created, verify them in the GitHub organization dashbo
 
   **Screenshot: Repositories in Organization**  
 
-![image](https://github.com/user-attachments/assets/3048d2ac-3698-44c9-8e67-3cf879345804)
+![image](https://github.com/user-attachments/assets/fb7e8a3c-022d-4796-a867-21ba89719b75)
 
 
 
