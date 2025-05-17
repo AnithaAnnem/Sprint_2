@@ -95,15 +95,7 @@ They review the scan results and take corrective actions:
 - **Improves Code Quality:** Encourages use of secure and updated dependencies.
 
 
-# Dependency Scanning POC
 
-# Objective
-To evaluate the effectiveness of dependency scanning tools in identifying security vulnerabilities in third-party libraries and dependencies used in a software project.
-
-# Prerequisites
-- Java project with pom.xml
-
-- GitHub repository
 
 
 
