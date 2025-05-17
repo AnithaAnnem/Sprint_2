@@ -9,81 +9,59 @@
 | Anitha Annem  |     |      |         | L1             | Mukul Joshi       |
 | Anitha Annem  |     |      |         | L2             | piyush Upadhyay      |
 
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Jenkins POC Setup](#jenkins-poc-setup)
+- [Contact Information](#contact-information)
+- [References](#references)
+
+
+
 For more detailed infromation related refer this link [Ansible Role Documentation](https://github.com/Cloud-NInja-snaatak/Documentation/blob/kanika_scrum44/commonstack/ansible/role/intro.md)
 
-# Directory Structure
+
+# Introduction 
+This Proof of Concept (POC) demonstrates a basic setup of Jenkins, an open-source automation server widely used for continuous integration and continuous delivery (CI/CD). 
+
+# Jenkins POC Setup
+
+## Install Java
 ```bash
-jenkins-role/
-├── defaults/
-│   └── main.yml
-├── files/
-│   └── jenkins.repo
-├── handlers/
-│   └── main.yml
-├── tasks/
-│   └── main.yml
-├── templates/
-│   └── jenkins.service.j2
-├── vars/
-│   └── main.yml
-├── meta/
-│   └── main.yml
-└── README.md
+sudo apt update
+sudo apt install openjdk-11-jdk -y
+java -version
 ```
-## Role Components
+## Install Jenkins
+```bash
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 
-defaults/main.yml
-Contains default variables (can be overridden):
-
-```yaml
-jenkins_port: 8080
-jenkins_home: /var/lib/jenkins
-jenkins_version: "2.426.1"
+sudo apt update
+sudo apt install jenkins -y
 ```
-vars/main.yml
-Contains version-pinned or OS-specific variables:
-```yaml
-jenkins_repo_url: "http://pkg.jenkins.io/redhat-stable/jenkins.repo"
-jenkins_gpg_key_url: "https://pkg.jenkins.io/redhat-stable/jenkins.io.key"
-java_package: "java-11-openjdk"
+##  Start & Enable Jenkins
+```bash
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
 ```
-
-tasks/main.yml
-Defines the main playbook steps:
-```yaml
-- name: Install Java
-  package:
-    name: "{{ java_package }}"
-    state: present
-
-- name: Add Jenkins repo
-  get_url:
-    url: "{{ jenkins_repo_url }}"
-    dest: /etc/yum.repos.d/jenkins.repo
-
-- name: Import GPG key
-  rpm_key:
-    state: present
-    key: "{{ jenkins_gpg_key_url }}"
-
-- name: Install Jenkins
-  package:
-    name: jenkins
-    state: present
-
-- name: Enable and start Jenkins
-  service:
-    name: jenkins
-    enabled: yes
-    state: started
+Check status:
+```bash
+sudo systemctl status jenkins
 ```
-handlers/main.yml
-```yaml
-- name: restart jenkins
-  service:
-    name: jenkins
-    state: restarted
+## Access Jenkins UI
+Open a browser and visit:
 ```
+http://<your-server-ip>:8080
+```
+## Unlock Jenkins
+Get the initial admin password:
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+Paste it into the UI to continue.
+
 
 
 # Contact Information 
@@ -94,4 +72,4 @@ handlers/main.yml
 # References
 | **Link** | **Description** |
 |------------------------------------------------------|------------------|
-| [Attendance](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Shubham_SCRUM-72/ot_ms_understanding/application/attendance/documentation/README.md)| Attendance Documentations      |
+| [Jenkins Installation](https://www.jenkins.io/doc/book/installing/linux/)| Installation on Jenkins      |
